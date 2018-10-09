@@ -18,18 +18,18 @@
 <meta property="og:site_name" content="longke">
 <meta property="og:description" content="刚开始我也是很不理解为什么要利用github+hexo搭建博客，现在差不多能理解，首先逼格很高，其次用github搭建可以学习使用github并且空间很大，也可以便于交流。 再次声明本篇是基于windows系统下搭建的博客。（写于2018.10.8晚，禁止转载） 废话不多说开始。 搭建前准备node.js  ,git的安装（ps：在命令行里敲node -v  npm -v  git -versio">
 <meta property="og:locale" content="zh">
-<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/01.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/02.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/03.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/04.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/05.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/06.png">
-<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/07.png">
-<meta property="og:updated_time" content="2018-10-09T10:15:50.747Z">
+<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/images/01.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/images/02.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/images/03.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/images/04.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/images/05.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/images/06.png">
+<meta property="og:image" content="http://yoursite.com/2018/10/09/csdn_export_md/images/01.png">
+<meta property="og:updated_time" content="2018-10-09T10:29:21.727Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于github和hexo搭建的个人博客的基本教程">
 <meta name="twitter:description" content="刚开始我也是很不理解为什么要利用github+hexo搭建博客，现在差不多能理解，首先逼格很高，其次用github搭建可以学习使用github并且空间很大，也可以便于交流。 再次声明本篇是基于windows系统下搭建的博客。（写于2018.10.8晚，禁止转载） 废话不多说开始。 搭建前准备node.js  ,git的安装（ps：在命令行里敲node -v  npm -v  git -versio">
-<meta name="twitter:image" content="http://yoursite.com/2018/10/09/csdn_export_md/01.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/10/09/csdn_export_md/images/01.png">
 
     
     <link rel="alternative" href="/atom.xml" title="longke" type="application/atom+xml">
@@ -113,10 +113,10 @@
 <p><strong>再次声明本篇是基于windows系统下搭建的博客。</strong>（写于2018.10.8晚，禁止转载）</p>
 <p>废话不多说开始。</p>
 <p>搭建前准备node.js  ,git的安装（ps：在命令行里敲node -v  npm -v  git -version,如果出现版本信息就是安装成功哦，笔芯）</p>
-<p>一，创建仓库并添加秘钥<br>创建仓库如图1-1<br><img src="/2018/10/09/csdn_export_md/01.png" alt="在这里插入图片描述"><br>                        图1-1</p>
+<p>一，创建仓库并添加秘钥<br>创建仓库如图1-1<br><img src="/2018/10/09/csdn_export_md/images/01.png" alt="在这里插入图片描述"><br>                        图1-1</p>
 <p>新建仓库找到new repository 点击出现如图1-2</p>
 <p>注意：仓库名后缀必须为github.io   并且自己仓库的名字最好和自己github的名字一致，Description 这一栏可以不用填写，只需用勾选public就可以，然后自己的仓库就建好了。</p>
-<p><img src="/2018/10/09/csdn_export_md/02.png" alt="在这里插入图片描述"></p>
+<p><img src="/2018/10/09/csdn_export_md/images/02.png" alt="在这里插入图片描述"></p>
 <pre><code>图1-2
 </code></pre><p>添加秘钥</p>
 <p>1.现在点击鼠标右键打开git bash，首先检查是否有ssh key；</p>
@@ -128,21 +128,21 @@
 <p>3.生成新的ssh key</p>
 <p>输入 ：</p>
 <p>$ ssh-keygen -t rsa -C”邮箱地址@youremail.com”</p>
-<p>回车就好；<br>如果要让你输入密码，输入密码就好；<br>看到这样的如图1-3 就说明你已经设置好了；<br><img src="/2018/10/09/csdn_export_md/03.png" alt="在这里插入图片描述"></p>
+<p>回车就好；<br>如果要让你输入密码，输入密码就好；<br>看到这样的如图1-3 就说明你已经设置好了；<br><img src="/2018/10/09/csdn_export_md/images/03.png" alt="在这里插入图片描述"></p>
 <pre><code>图1-3
 </code></pre><p>4.添加ssh key到github</p>
 <p>首先到github上点击自己右上角头像，下边有个setting，如图1-4  然后点击setting；</p>
-<p><img src="/2018/10/09/csdn_export_md/04.png" alt="在这里插入图片描述"></p>
+<p><img src="/2018/10/09/csdn_export_md/images/04.png" alt="在这里插入图片描述"></p>
 <pre><code>图1-4 
 </code></pre><p> 选择ssh and GPG keys添加秘钥就好，可以不用填写名称。如图1-5；</p>
-<p><img src="/2018/10/09/csdn_export_md/05.png" alt="在这里插入图片描述"></p>
+<p><img src="/2018/10/09/csdn_export_md/images/05.png" alt="在这里插入图片描述"></p>
 <pre><code>图1-5
 </code></pre><p>二，配置hexo<br>在桌面建一个文件夹，自己喜欢就好，我们暂时叫做git pages；然后打开文件夹，在空白处点击右键，打开git bash；输入命令行</p>
 <p>npm install hexo-cli -g</p>
 <p>然后输入 npm install hexo –save，然后会看到窗口刷了一大堆白字，不用管，再输入</p>
 <p>hexo -v，</p>
 <p>如果看到图1-6，则说明安装正确了； </p>
-<p><img src="/2018/10/09/csdn_export_md/06.png" alt="在这里插入图片描述"><br>                       图1-6</p>
+<p><img src="/2018/10/09/csdn_export_md/images/06.png" alt="在这里插入图片描述"><br>                       图1-6</p>
 <p>1.初始化hexo<br>在桌面新建文件夹hexospace 右键git bash 输入</p>
 <p>hexo init；</p>
 <p>再输入 npm install 然后等待安装；</p>
@@ -168,7 +168,7 @@
 <p>再输入</p>
 <p>hexo g<br>hexo d </p>
 <p>然后就可以刷新网站看到自己推送的文章了；<br><strong>更换默认的主题</strong><br>$ git clone <a href="https://github.com/wuchong/jacman.git" target="_blank" rel="noopener">https://github.com/wuchong/jacman.git</a> themes/jacman<br>$ git clone <a href="https://github.com/A-limon/pacman.git" target="_blank" rel="noopener">https://github.com/A-limon/pacman.git</a> themes/pacman<br>然后再将config文件的theme值改好，复制哪个改成哪个<br>例:theme： jacman；<em>ps:一定注意空格哦~</em><br>更新主题</p>
-<p>输入;<br>$ cd themes/jacman<br>$ git pull<br>为避免出错先备份你的config文件；<br>然后再输入：<br>hexo g<br>hexo s；进行预览；<br><strong>如果报错如下图的话，就在cd themes/jacman后面hexo clean 即可！！！！</strong><br><img src="/2018/10/09/csdn_export_md/07.png" alt="在这里插入图片描述"><br>hexo d -g再刷新网页就可以看到新的主题了；</p>
+<p>输入;<br>$ cd themes/jacman<br>$ git pull<br>为避免出错先备份你的config文件；<br>然后再输入：<br>hexo g<br>hexo s；进行预览；<br><strong>如果报错如下图的话，就在cd themes/jacman后面hexo clean 即可！！！！</strong><br><img src="/2018/10/09/csdn_export_md/images/01.png" alt="在这里插入图片描述"><br>hexo d -g再刷新网页就可以看到新的主题了；</p>
 <p>到目前为止个人博客已经完成一半了，整体的框架已经形成     剩下的内容后续慢慢补上<del>~</del>~<br>写于2018年10月8日<br>大家也可以进我的博客里进行学习交流，欢迎来访：<br><a href="http://longlongkeke.github.io/" target="_blank" rel="noopener">http://longlongkeke.github.io/</a></p>
   
 	</div>
